@@ -44,10 +44,32 @@ header h1 {
 
 /* Floating Animation */
 @keyframes float {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-20px); }
-  100% { transform: translateY(0); }
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(20px, -20px);
+  }
+  50% {
+    transform: translate(-20px, 20px);
+  }
+  75% {
+    transform: translate(20px, 20px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
 }
+
+/* Emoji Styling */
+.emoji {
+  position: absolute;
+  font-size: 2rem;
+  cursor: pointer;
+  animation: float 5s infinite ease-in-out;
+  animation-duration: calc(2s + (5 * random()));
+}
+
 
 /* Footer Section */
 footer {
