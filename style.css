@@ -1,0 +1,71 @@
+/* General Reset */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #f9f9f9, #e0e0e0);
+  overflow: hidden;
+}
+
+/* Header Section */
+header {
+  text-align: center;
+  padding: 20px;
+  background: #ffcc00;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+#pot {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+/* Game Area */
+#game-area {
+  position: relative;
+  height: calc(100vh - 160px);
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Floating Emojis */
+.emoji {
+  position: absolute;
+  font-size: 2rem;
+  cursor: pointer;
+  animation: float 4s infinite ease-in-out;
+}
+
+/* Floating Animation */
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0); }
+}
+
+/* Footer Section */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #ffcc00;
+}
+
+#play-button {
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  cursor: pointer;
+  background: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+#play-button:hover {
+  background: #005bb5;
+}
